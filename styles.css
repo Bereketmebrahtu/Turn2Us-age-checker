@@ -1,10 +1,10 @@
 .form-section {
-display: flex;
+display: grid;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 background-color: orangered;
-width: 40vw;
+width: 30vw;
 height: 80vh;
 margin-left: auto;
 margin-right: auto
@@ -13,39 +13,43 @@ margin-right: auto
 }
 
 .main-container{
+position: relative;
 display: flex;
-position: absolute;
 justify-content: center;
 align-items: center;
-flex-wrap: wrap; 
+
 
 }
 
 .inner-container{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .submit-btn {
 display: flex;
-flex-direction: column;
 margin: 0.5rem;
 padding: 0.7rem;
-width: 50%;
 margin-left: auto;
 margin-right: auto;
 
+
 }
 
-input {
-  display: flex;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-    
+span {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+
+
+
 }
+
 
 @media (min-width: 280px) {
     .main-container {

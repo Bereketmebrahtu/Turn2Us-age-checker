@@ -46,3 +46,15 @@ input {
   margin-right: auto;
     
 }
+
+@media (min-width: 280px) {
+    .main-container {
+        width: fit-content;
+        height: fit-content;
+        }
+        
+    }
+    .inner-container {
+        width: fit-content;
+        height: fit-content;
+    }

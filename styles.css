@@ -1,11 +1,12 @@
+
+
 .form-section {
 display: grid;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 background-color: orangered;
-
-max-width: 500px;
+width: fit-content;
 height: 70vh;
 margin-left: auto;
 margin-right: auto
@@ -37,6 +38,20 @@ margin-left: auto;
 margin-right: auto;
 
 
+}
+
+
+
+p {
+background-color: white;
+ color: black;
+ margin: 0;
+ margin-left: 8.0rem
+}
+
+h1 {
+    background-color: white;
+    color: orangered;
 }
 
 

@@ -9,6 +9,7 @@ const div2El = document.createElement('div')
 div2El.setAttribute('class','inner-container')
 const spanEl = document.createElement('span');
 const h2El = document.createElement('h2')
+console.log(h2El)
 h2El.textContent = "Welcome to Turn2Us"
 const h4El = document.createElement('h4')
 h4El.textContent = "Enter your age to get started"

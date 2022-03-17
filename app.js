@@ -8,6 +8,12 @@ divEl.setAttribute('class','main-container')
 const div2El = document.createElement('div')
 div2El.setAttribute('class','inner-container')
 const spanEl = document.createElement('span');
+const h2El = document.createElement('h2')
+h2El.textContent = "Welcome to Turn2Us"
+const h4El = document.createElement('h4')
+h4El.textContent = "Enter your age to get started"
+spanEl.appendChild(h2El);
+spanEl.appendChild(h4El);
 spanEl.setAttribute('class', 'text')
 spanEl.textContent = ''
 div2El.appendChild(spanEl);
@@ -22,12 +28,12 @@ form.setAttribute('class', 'super-form');
 divEl.appendChild(form);
 const inputEl = document.createElement('input')
 inputEl.name = 'text';
-inputEl.type = 'text';
+inputEl.type = 'date';
 const buttonEl = document.createElement('button')
 buttonEl.setAttribute('class', 'submit-btn',);
 buttonEl.type = 'submit';
 buttonEl.name = 'button';
-buttonEl.textContent = 'Click Me'
+buttonEl.textContent = 'Submit'
 form.appendChild(buttonEl);
 console.log(buttonEl)
 
@@ -49,12 +55,27 @@ sectionEl.appendChild(div2El)
 
 // const formEl = document.querySelector('input')
 // console.log(formEl)
-const value = form.elements['text'].value
+
 console.log
-// const formData = new FormData(value)
-// const myObj = Object.fromEntries(formData)
-// console.log(formEl)
+
+function ageChecker() {
+    
+    const valueEl = form.elements['text'].value
 
 
+if (valueEl > 18) {
 
+    window.location.href ="/success.html";
+}
+
+else {
+    window.location.href = "/error.html";
+}
+}
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    ageChecker()
+
+})
 

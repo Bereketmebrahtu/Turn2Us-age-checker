@@ -3,8 +3,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-background-color: lightcyan;
-width: 100vw;
+background-color: orangered;
+width: 40vw;
 height: 80vh;
 margin-left: auto;
 margin-right: auto
@@ -21,13 +21,28 @@ flex-wrap: wrap;
 
 }
 
+.inner-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
 .submit-btn {
 display: flex;
 flex-direction: column;
 margin: 0.5rem;
-padding: 1em;
-width: auto;
+padding: 0.7rem;
+width: 50%;
 margin-left: auto;
 margin-right: auto;
-text-align: center;
+
+}
+
+input {
+  display: flex;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+    
 }

@@ -9,5 +9,9 @@
 - Javascript was used entirely except for a starter HTML file to create all the elements of the app
 - I learned loads about DOM manipulation through that 
 - A stretch goal : Build an app entirely using pure JavaScript
-- 
-- 
+
+# possible improvements 
+
+- Regex form validation 
+- API form submission 
+

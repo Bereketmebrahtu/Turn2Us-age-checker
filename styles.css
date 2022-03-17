@@ -36,20 +36,30 @@ margin: 0.5rem;
 padding: 0.7rem;
 margin-left: auto;
 margin-right: auto;
+width: fit-content;
+}
 
-
+input {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
 p {
+
 background-color: white;
  color: black;
  margin: 0;
- margin-left: 8.0rem
+ margin-left: 8.5rem;
+ font-size: 18px;
+ 
+
 }
 
 h1 {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     color: orangered;
 }
